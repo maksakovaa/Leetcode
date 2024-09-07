@@ -4,3 +4,4 @@ Solutions for leetcode tasks:
 - [80. Remove Duplicates from Sorted Array II](https://github.com/maksakovaa/Leetcode/blob/main/080_RemoveDuplicatesFromSortedArrayII.cpp)
 - [88. Merge Sorted Array](https://github.com/maksakovaa/Leetcode/blob/main/088_MergeSortedArray.cpp)
 - [169. Majority Element](https://github.com/maksakovaa/Leetcode/blob/main/169_MajorityElement.cpp)
+- [189. Rotate Array](https://github.com/maksakovaa/Leetcode/blob/main/189_RotateArray.cpp)
