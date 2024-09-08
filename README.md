@@ -1,4 +1,5 @@
 Solutions for leetcode tasks:
+- [13. Roman to Integer](https://github.com/maksakovaa/Leetcode/blob/main/013_RomanToInteger.cpp) 
 - [26. Remove Duplicates from Sorted Array](https://github.com/maksakovaa/Leetcode/blob/main/026_Remove%20Duplicates%20from%20Sorted%20Array.cpp)
 - [27. Remove Element](https://github.com/maksakovaa/Leetcode/blob/main/027_RemoveElement.cpp)
 - [55. Jump Game](https://github.com/maksakovaa/Leetcode/blob/main/055_JumpGame.cpp)
