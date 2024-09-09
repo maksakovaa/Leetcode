@@ -3,6 +3,7 @@ Solutions for leetcode tasks:
 - [14. Longest Common Prefix](https://github.com/maksakovaa/Leetcode/blob/main/014_LongestCommonPrefix.cpp)
 - [26. Remove Duplicates from Sorted Array](https://github.com/maksakovaa/Leetcode/blob/main/026_Remove%20Duplicates%20from%20Sorted%20Array.cpp)
 - [27. Remove Element](https://github.com/maksakovaa/Leetcode/blob/main/027_RemoveElement.cpp)
+- [28. Find the Index of the First Occurrence in a String](https://github.com/maksakovaa/Leetcode/blob/main/028_FindTheIndexOfTheFirstOccurrenceInAString.cpp)
 - [55. Jump Game](https://github.com/maksakovaa/Leetcode/blob/main/055_JumpGame.cpp)
 - [58. Length of Last Word](https://github.com/maksakovaa/Leetcode/blob/main/058_LengthOfLastWord.cpp)
 - [80. Remove Duplicates from Sorted Array II](https://github.com/maksakovaa/Leetcode/blob/main/080_RemoveDuplicatesFromSortedArrayII.cpp)
