@@ -85,11 +85,6 @@ void checkResult(bool result, bool output)
     testCounter++;
 }
 
-inline void ltrim(std::string &s)
-{
-
-}
-
 void testCase(string str, bool result)
 {
     Solution s;
