@@ -19,11 +19,14 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum jump 
 #include <iostream>
 using std::vector;
 
-class Solution {
+class Solution
+{
 public:
-    bool canJump(vector<int>& nums) {
+    bool canJump(vector<int>& nums)
+    {
         int i, minjump = 0;
-        for(i = nums.size()-2; i >= 0; i--){
+        for(i = nums.size()-2; i >= 0; i--)
+        {
             minjump++;
             if(nums[i] >= minjump)
 			    minjump = 0;
@@ -46,43 +49,16 @@ void checkResult(bool out, bool result)
     }
 }
 
-
-void testCase1()
+void testCase(vector<int> nums, bool output)
 {
     Solution s;
-    vector<int> nums = {2,3,1,1,4};
-    bool output = true;
-    checkResult(s.canJump(nums), output);
-}
-
-void testCase2()
-{
-    Solution s;
-    vector<int> nums = {3,2,1,0,4};
-    bool output = false;
-    checkResult(s.canJump(nums), output);
-}
-
-void testCase3()
-{
-    Solution s;
-    vector<int> nums = {2,0};
-    bool output = true;
-    checkResult(s.canJump(nums), output);
-}
-
-void testCase4()
-{
-    Solution s;
-    vector<int> nums = {2,5,0,0};
-    bool output = true;
     checkResult(s.canJump(nums), output);
 }
 
 int main()
 {
-    testCase1();
-    testCase2();
-    testCase3();
-    testCase4();
+    testCase({2,3,1,1,4}, true);
+    testCase({3,2,1,0,4}, false);
+    testCase({2,0}, true);
+    testCase({2,5,0,0}, true);
 }

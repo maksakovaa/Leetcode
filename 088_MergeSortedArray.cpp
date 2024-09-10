@@ -1,6 +1,7 @@
 #include <vector>
 #include <algorithm>
 #include <iostream>
+
 using std::vector;
 
 class Solution {
@@ -37,68 +38,19 @@ void checkResult(std::vector<int>& nums, std::vector<int>& result)
     testCounter++;
 }
 
-Solution s;
-
-void test1()
+void testCase(vector<int> nums1, int nums1c, vector<int> nums2, int nums2c, vector<int> result)
 {
-    std::vector<int> nums1 = { 1, 2, 3, 0, 0, 0 };
-    std::vector<int> nums2 = { 2, 5, 6 };
-    std::vector<int> result = { 1,2,2,3,5,6 };
-    s.merge(nums1, 3, nums2, 3);
-    checkResult(nums1, result);
-}
-
-void test2()
-{
-    std::vector<int> nums1 = { 1 };
-    std::vector<int> nums2;
-    std::vector<int> result = { 1 };
-    s.merge(nums1, 1, nums2, 0);
-    checkResult(nums1, result);
-}
-
-void test3()
-{
-    std::vector<int> nums1 = { 0 };
-    std::vector<int> nums2 = { 1 };
-    std::vector<int> result = { 1 };
-    s.merge(nums1, 0, nums2, 1);
-    checkResult(nums1, result);
-}
-
-void test4()
-{
-    std::vector<int> nums1 = { 2, 0 };
-    std::vector<int> nums2 = { 1 };
-    std::vector<int> result = { 1, 2 };
-    s.merge(nums1, 1, nums2, 1);
-    checkResult(nums1, result);
-}
-
-void test5()
-{
-    std::vector<int> nums1 = { 4, 5, 6, 0, 0, 0 };
-    std::vector<int> nums2 = { 1, 2, 3 };
-    std::vector<int> result = { 1, 2, 3, 4, 5, 6 };
-    s.merge(nums1, 3, nums2, 3);
-    checkResult(nums1, result);
-}
-
-void test6()
-{
-    std::vector<int> nums1 = { 4,0,0,0,0,0 };
-    std::vector<int> nums2 = { 1, 2, 3, 5, 6 };
-    std::vector<int> result = { 1, 2, 3, 4, 5, 6 };
-    s.merge(nums1, 1, nums2, 5);
+    Solution s;
+    s.merge(nums1, nums1c, nums2, nums2c);
     checkResult(nums1, result);
 }
 
 int main()
 {
-    test1();
-    test2();
-    test3();
-    test4();
-    test5();
-    test6();
+    testCase({ 1, 2, 3, 0, 0, 0 }, 3, { 2, 5, 6 }, 3, { 1,2,2,3,5,6 });
+    testCase({1},1,{0}, 0, {1});
+    testCase({0}, 0, {1}, 1, {1});
+    testCase({ 2, 0 }, 1, { 1 }, 1, { 1,2});
+    testCase({ 4, 5, 6, 0, 0, 0 }, 3, { 1, 2, 3 }, 3, { 1, 2, 3, 4, 5, 6 });
+    testCase({ 4,0,0,0,0,0 }, 1, { 1, 2, 3, 5, 6 }, 5, { 1, 2, 3, 4, 5, 6 });
 }

@@ -76,34 +76,15 @@ void checkResult(int out, int result)
     }
 }
 
-
-void testCase1()
+void testCase(vector<int> nums, int output)
 {
     Solution s;
-    vector<int> nums = {7,1,5,3,6,4};
-    int output = 7;
-    checkResult(s.maxProfit(nums), output);
-}
-
-void testCase2()
-{
-    Solution s;
-    vector<int> nums = {1,2,3,4,5};
-    int output = 4;
-    checkResult(s.maxProfit(nums), output);
-}
-
-void testCase3()
-{
-    Solution s;
-    vector<int> nums = {7,6,4,3,1};
-    int output = 0;
     checkResult(s.maxProfit(nums), output);
 }
 
 int main()
 {
-    testCase1();
-    testCase2();
-    testCase3();
+    testCase({7,1,5,3,6,4}, 7);
+    testCase({1,2,3,4,5}, 4);
+    testCase({7,6,4,3,1}, 0);
 }

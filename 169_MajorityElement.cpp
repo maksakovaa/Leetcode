@@ -50,27 +50,14 @@ void checkResult(int output, int result)
     }
 }
 
-
-void testCase1()
+void testCase(vector<int> nums, int output)
 {
     Solution s;
-    std::vector<int> nums = { 3,2,3 };
-    int output = 3;
-    int result = s.majorityElement(nums);
-    checkResult(output, result);
-}
-
-void testCase2()
-{
-    Solution s;
-    std::vector<int> nums = { 2,2,1,1,1,2,2 };
-    int output = 2;
-    int result = s.majorityElement(nums);
-    checkResult(output, result);
+    checkResult(output, s.majorityElement(nums));
 }
 
 int main()
 {
-    testCase1();
-    testCase2();
+    testCase({ 3,2,3 }, 3);
+    testCase({ 2,2,1,1,1,2,2 }, 2);
 }

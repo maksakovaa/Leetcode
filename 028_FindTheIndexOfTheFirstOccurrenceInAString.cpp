@@ -82,38 +82,15 @@ public:
     }
 };
 
-
-
-void testCase1()
+void testCase(string haystack, string needle, int out)
 {
     Solution s;
-    string haystack = "sadbutsad";
-    string needle = "sad";
-    int out = 0;
-    s.checkResult(s.strStr(haystack, needle), out);
-}
-
-void testCase2()
-{
-    Solution s;
-    string haystack = "leetcode";
-    string needle = "leeto";
-    int out = -1;
-    s.checkResult(s.strStr(haystack, needle), out);
-}
-
-void testCase3()
-{
-    Solution s;
-    string haystack = "mississippi";
-    string needle = "issip";
-    int out = 4;
     s.checkResult(s.strStr(haystack, needle), out);
 }
 
 int main()
 {
-    testCase1();
-    testCase2();
-    testCase3();
+    testCase("sadbutsad", "sad", 0);
+    testCase("leetcode", "leeto", -1);
+    testCase("mississippi", "issip", 4);
 }

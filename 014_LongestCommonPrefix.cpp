@@ -88,43 +88,16 @@ public:
 };
 
 
-
-void testCase1()
+void testCase(std::vector<std::string> str, std::string out)
 {
     Solution s;
-    std::vector<std::string> str = {"flower","flow","flight"};
-    std::string out = "fl";
-    s.checkResult(s.longestCommonPrefix(str), out);
-}
-
-void testCase2()
-{
-    Solution s;
-    std::vector<std::string> str = {"dog","racecar","car"};
-    std::string out = "";
-    s.checkResult(s.longestCommonPrefix(str), out);
-}
-
-void testCase3()
-{
-    Solution s;
-    std::vector<std::string> str = {"cir", "car"};
-    std::string out = "c";
-    s.checkResult(s.longestCommonPrefix(str), out);
-}
-
-void testCase4()
-{
-    Solution s;
-    std::vector<std::string> str = {"flower","flower","flower","flower"};
-    std::string out = "flower";
     s.checkResult(s.longestCommonPrefix(str), out);
 }
 
 int main()
 {
-    testCase1();
-    testCase2();
-    testCase3();
-    testCase4();
+    testCase({"flower","flow","flight"}, "fl");
+    testCase({"dog","racecar","car"}, "");
+    testCase({"cir", "car"}, "c");
+    testCase({"flower","flower","flower","flower"}, "flower");
 }

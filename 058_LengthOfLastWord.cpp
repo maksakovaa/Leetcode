@@ -82,35 +82,15 @@ public:
     }
 };
 
-
-
-void testCase1()
+void testCase(std::string str, int out)
 {
     Solution s;
-    std::string str = "Hello World";
-    int out = 5;
-    s.checkResult(s.lengthOfLastWord(str), out);
-}
-
-void testCase2()
-{
-    Solution s;
-    std::string str = "   fly me   to   the moon  ";
-    int out = 4;
-    s.checkResult(s.lengthOfLastWord(str), out);
-}
-
-void testCase3()
-{
-    Solution s;
-    std::string str = "luffy is still joyboy";
-    int out = 6;
     s.checkResult(s.lengthOfLastWord(str), out);
 }
 
 int main()
 {
-    testCase1();
-    testCase2();
-    testCase3();
+    testCase("Hello World", 5);
+    testCase("   fly me   to   the moon  ", 4);
+    testCase("luffy is still joyboy", 6);
 }

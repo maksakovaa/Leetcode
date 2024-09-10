@@ -58,29 +58,15 @@ void checkResult(vector<int>& nums, vector<int>& result)
     }
 }
 
-
-void testCase1()
+void testCase(vector<int> nums, int k, vector<int> result)
 {
     Solution s;
-    std::vector<int> nums = { 1,2,3,4,5,6,7 };
-    int k = 3;
-    vector<int> result = { 5,6,7,1,2,3,4 };
-    s.rotate(nums, k);
-    checkResult(nums, result);
-}
-
-void testCase2()
-{
-    Solution s;
-    std::vector<int> nums = { -1,-100,3,99 };
-    int k = 2;
-    vector<int> result = { 3,99,-1,-100 };
     s.rotate(nums, k);
     checkResult(nums, result);
 }
 
 int main()
 {
-    testCase1();
-    testCase2();
+    testCase({ 1,2,3,4,5,6,7 }, 3, { 5,6,7,1,2,3,4 });
+    testCase({ -1,-100,3,99 }, 2, { 3,99,-1,-100 });
 }

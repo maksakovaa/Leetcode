@@ -150,34 +150,15 @@ private:
 };
 
 
-
-void testCase1()
+void testCase(std::string str, int out)
 {
     Solution s;
-    std::string str = "III";
-    int out = 3;
-    s.checkResult(s.romanToInt(str), out);
-}
-
-void testCase2()
-{
-    Solution s;
-    std::string str = "LVIII";
-    int out = 58;
-    s.checkResult(s.romanToInt(str), out);
-}
-
-void testCase3()
-{
-    Solution s;
-    std::string str = "MCMXCIV";
-    int out = 1994;
     s.checkResult(s.romanToInt(str), out);
 }
 
 int main()
 {
-    testCase1();
-    testCase2();
-    testCase3();
+    testCase("III", 3);
+    testCase("LVIII", 58);
+    testCase("MCMXCIV", 1994);
 }
