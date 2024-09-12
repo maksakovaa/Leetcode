@@ -1,4 +1,5 @@
 Solutions for leetcode tasks:
+- [1. Two Sum](https://github.com/maksakovaa/Leetcode/blob/main/001_TwoSum.cpp)
 - [13. Roman to Integer](https://github.com/maksakovaa/Leetcode/blob/main/013_RomanToInteger.cpp)
 - [14. Longest Common Prefix](https://github.com/maksakovaa/Leetcode/blob/main/014_LongestCommonPrefix.cpp)
 - [26. Remove Duplicates from Sorted Array](https://github.com/maksakovaa/Leetcode/blob/main/026_Remove%20Duplicates%20from%20Sorted%20Array.cpp)
