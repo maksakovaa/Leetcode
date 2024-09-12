@@ -17,3 +17,4 @@ Solutions for leetcode tasks:
 - [189. Rotate Array](https://github.com/maksakovaa/Leetcode/blob/main/189_RotateArray.cpp)
 - [383. Ransom Note](https://github.com/maksakovaa/Leetcode/blob/main/383_RansomNote.cpp)
 - [392. Is Subsequence](https://github.com/maksakovaa/Leetcode/blob/main/392_IsSubsequence.cpp)
+- [1768. Merge Strings Alternately](https://github.com/maksakovaa/Leetcode/blob/main/1768_MergeStringsAlternately.cpp)
