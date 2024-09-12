@@ -14,4 +14,5 @@ Solutions for leetcode tasks:
 - [125. Valid Palindrome](https://github.com/maksakovaa/Leetcode/blob/main/125_ValidPalindrome.cpp)
 - [169. Majority Element](https://github.com/maksakovaa/Leetcode/blob/main/169_MajorityElement.cpp)
 - [189. Rotate Array](https://github.com/maksakovaa/Leetcode/blob/main/189_RotateArray.cpp)
+- [383. Ransom Note](https://github.com/maksakovaa/Leetcode/blob/main/383_RansomNote.cpp)
 - [392. Is Subsequence](https://github.com/maksakovaa/Leetcode/blob/main/392_IsSubsequence.cpp)
