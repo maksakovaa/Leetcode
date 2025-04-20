@@ -18,3 +18,4 @@ Solutions for leetcode tasks:
 - [383. Ransom Note](https://github.com/maksakovaa/Leetcode/blob/main/383_RansomNote.cpp)
 - [392. Is Subsequence](https://github.com/maksakovaa/Leetcode/blob/main/392_IsSubsequence.cpp)
 - [1768. Merge Strings Alternately](https://github.com/maksakovaa/Leetcode/blob/main/1768_MergeStringsAlternately.cpp)
+- [274. H-Index](https://github.com/maksakovaa/Leetcode/blob/main/274_H-Index.cpp)
